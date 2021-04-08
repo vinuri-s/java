@@ -1,0 +1,321 @@
+10. Data representation in Computer Memeory
+
+byte->short->int ->long-> float-> double 
+	        
+	        char(compatible with int) 
+////////////////////////////////////////////////////////////////////////////
+Q70
+class Example{
+	public static void main(String args[]){
+		int x;
+		x=100;
+		System.out.println(x);
+		
+		x=1.5; //Illegal
+		System.out.println(x); 
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q71
+class Example{
+	public static void main(String args[]){	
+		double x;
+		x=1.5; //Legal
+		System.out.println(x);
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q72 'byte'
+==========
+import java.util.*;
+class Example{
+	public static void main(String args[]){
+		byte b;
+		b=100;
+		System.out.println(b);
+		
+		b=-123;
+		System.out.println(b);
+
+		b=127; //Max of byte
+		System.out.println("Max : "+b);		
+		
+		b=-128;
+		System.out.println("Min : "+b);		
+	} 
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q73 Exercise
+============
+import java.util.*;
+class Example{
+	public static void main(String args[]){
+		byte b;
+		b=127; //max of byte
+		System.out.println("Max of byte : "+b);
+		
+		b=128; //Compile Error
+
+		b=-128; //min of byte
+		System.out.println("Min of byte : "+b);
+
+		b=-129; //Compile Error
+	} 
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q74 Short
+=========
+import java.util.*;
+class Example{
+	public static void main(String args[]){
+		short s;
+		s=32767; //Max of short
+		System.out.println("Max of short : "+s);
+		
+		s=32768; //Error
+
+		s=-32768; //min of short
+		System.out.println("Min of short : "+s);
+
+		s=-32769; //Compile Error
+	} 
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q75 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		byte b;
+		b=Byte.MAX_VALUE;
+		System.out.println("Max of byte : "+b);
+
+		b=Byte.MIN_VALUE;
+		System.out.println("Min of byte : "+b);
+
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q76 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		short s;
+		s=Short.MAX_VALUE;
+		System.out.println("Max of short : "+s);
+
+		s=Short.MIN_VALUE;
+		System.out.println("Min of short : "+s);
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q77 int
+=======
+class Example{
+	public static void main(String args[]){
+		int x;
+		x=Integer.MAX_VALUE;
+		System.out.println("Max of int : "+x);
+
+		x=Integer.MIN_VALUE;
+		System.out.println("Min of int : "+x);
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q78 long
+========
+class Example{
+	public static void main(String args[]){
+		long y;
+		y=Long.MAX_VALUE;
+		System.out.println("Max of long : "+y);
+
+		y=Long.MIN_VALUE;
+		System.out.println("Min of long : "+y);
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q79 float
+=========
+import java.util.*;
+class Example{
+	public static void main(String args[]){
+		float f;
+		f=100;
+		System.out.println("f : "+f); //100
+
+		//f=1.5; //Illegal
+		f=1.5f; //Legal
+		System.out.println("f : "+f); //1.5
+
+	} 
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q80 Max, min of float
+=====================
+import java.util.*;
+class Example{
+	public static void main(String args[]){
+		float f;
+		f=Float.MAX_VALUE;
+		System.out.println("max of float : "+f); //
+
+		f=Float.MIN_VALUE;
+		System.out.println("min of float : "+f); //
+	} 
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q81 type double
+===============
+import java.util.*;
+class Example{
+	public static void main(String args[]){
+		double d;
+		d=1.2333; 
+		System.out.println("double d : "+d);
+
+		d=-0.000122;
+		System.out.println("double d : "+d);
+
+	} 
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q82 max, min of double
+======================
+import java.util.*;
+class Example{
+	public static void main(String args[]){
+		double d;
+		d=Double.MAX_VALUE;
+		System.out.println("max of double : "+d); //
+
+		d=Double.MIN_VALUE;
+		System.out.println("min of double : "+d); //
+	} 
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q83 float vs double
+===================
+class Example{
+	public static void main(String args[]){
+		double d;
+		float f;
+		
+		f=0.123456789123456789f;
+		d=0.123456789123456789 ; //d or D
+		
+		System.out.println("float  : "+f);
+		System.out.println("double : "+d);
+
+		f=100.123456789123456789f;
+		d=100.123456789123456789 ; //d or D
+		
+		System.out.println("float  : "+f);
+		System.out.println("double : "+d);
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q84 Char, boolean
+================
+import java.util.*;
+class Example{
+	public static void main(String args[]){
+		char ch;
+		ch='A';
+		System.out.println("ch : "+ch); //print A
+
+		boolean b;
+		b=10>9;
+		System.out.println("b : "+b); //prints true
+	} 
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q85 Keyboard Inputs
+===================
+import java.util.*;
+class Example{
+	public static void main(String args[]){
+		Scanner input=new Scanner(System.in);
+		byte b;
+		b=input.nextByte();
+		
+		short s;
+		s=input.nextShort();
+
+		int x;
+		x=input.nextInt();
+		
+		long y;
+		y=input.nextLong();
+		
+		float f;
+		f=input.nextFloat();
+
+		double d;
+		d=input.nextDouble();
+	} 
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q86
+class Example{
+	public static void main(String args[]){
+		char ch='A';
+		System.out.println("ch : "+ch);
+
+ 		ch=66; //ASCII B
+		System.out.println("ch : "+ch);
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q87 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		System.out.println("A"+"B");
+		System.out.println('A'+"B");
+		System.out.println('A'+'B');
+		System.out.println('A'+100);
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q88 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		char ch='A';
+		int x=65;
+		System.out.println(x+ch);
+		System.out.println(ch+1);
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q89 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		System.out.println(2147483647); //Legal ->max of int(32bits)
+		System.out.println(-2147483648); //Legal->min of int
+
+		System.out.println(2147483648); //Illegal
+		System.out.println(-2147483649); //Illegal
+
+	}
+}

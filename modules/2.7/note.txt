@@ -1,0 +1,685 @@
+Q1
+import javax.swing.*;
+class Example{
+	public static void main(String args[]){
+		JFrame f1=new JFrame();
+		f1.setSize(300,300);
+		f1.setDefaultCloseOperation(3);
+		f1.setVisible(true);
+	}
+}
+
+///////////////////////////////////////////////////////////////////////
+Q2
+class Example{
+	public static void main(String args[]){
+		System.out.println("Hello Java");
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q3
+class Example{
+	public static void main(String args[]){
+		System.out.println("Statement 1");
+		System.out.println("Statement 2");
+		System.out.println("Statement 3");
+		System.out.println("Statement 4");
+		System.out.println("Statement 5");
+	}
+}
+////////////////////////////////////////////////////////////////////////////
+Q5
+class Example{
+	static public void main(String args[]){
+		System.out.println("Statement 1");
+		System.out.println("Statement 2");
+		System.out.println("Statement 3");
+		System.out.println("Statement 4");
+		System.out.println("Statement 5");
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q6
+class Example{
+	public static void main(String[] args){
+		System.out.println("Statement 1");
+		System.out.println("Statement 2");
+		System.out.println("Statement 3");
+		System.out.println("Statement 4");
+		System.out.println("Statement 5");
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q7
+class Example{
+	public static void main(String[] niroth){
+		System.out.println("Statement 1");
+		System.out.println("Statement 2");
+		System.out.println("Statement 3");
+		System.out.println("Statement 4");
+		System.out.println("Statement 5");
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q8
+class Example{
+	static void main(String[] args){
+		System.out.println("Statement 1");
+		System.out.println("Statement 2");
+		System.out.println("Statement 3");
+		System.out.println("Statement 4");
+		System.out.println("Statement 5");
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q9
+class Example{
+	public static void Main(String[] args){
+		System.out.println("Statement 1");
+		System.out.println("Statement 2");
+		System.out.println("Statement 3");
+		System.out.println("Statement 4");
+		System.out.println("Statement 5");
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q10
+class Example{
+	public static void main(String args){
+		System.out.println("Statement 1");
+		System.out.println("Statement 2");
+		System.out.println("Statement 3");
+		System.out.println("Statement 4");
+		System.out.println("Statement 5");
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+    1. System.out.println(data) vs System.out.print(data)
+////////////////////////////////////////////////////////////////////////////
+Q11
+class Example{
+	public static void main(String[] args){
+		System.out.println("A");
+		System.out.println("B");
+		System.out.println("C");
+		System.out.println("D");
+		System.out.println("E");
+	}
+}
+////////////////////////////////////////////////////////////////////////////
+Q12
+class Example{
+	public static void main(String[] args){
+		System.out.print("A");
+		System.out.print("B");
+		System.out.print("C");
+		System.out.print("D");
+		System.out.print("E");
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q13
+class Example{
+	public static void main(String[] args){
+		System.out.print("A");
+		System.out.print("B");
+		System.out.println("C");
+		System.out.print("D");
+		System.out.println("E");
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+    2. Java Comments
+////////////////////////////////////////////////////////////////////////////
+Q14
+class Example{
+	public static void main(String[] args){
+		System.out.println("A");
+		//System.out.println("B");
+		System.out.println("C");
+		System.out.println("D");
+		//System.out.println("E");
+		System.out.println("F");
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q15
+class Example{
+	public static void main(String[] args){
+		System.out.println("A"); //prints A
+		System.out.println("B"); //prints B
+		System.out.println("C");
+		System.out.println("D");
+		System.out.println("E"); 
+		System.out.println("F");
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q16 Block Comments
+==================
+class Example{
+	public static void main(String[] args){
+		System.out.println("A");
+		/*System.out.println("B");
+		System.out.println("C");
+		System.out.println("D");
+		System.out.println("E"); */
+		System.out.println("F");
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+    3. Simple data (Java Literals)
+////////////////////////////////////////////////////////////////////////////
+Q17
+class Example{
+	public static void main(String[] args){
+		System.out.println(100); //Integer Literals
+		System.out.println(11234); //Integer Literals
+		System.out.println(-100); //Integer Literals
+
+		System.out.println(0.34434); //Floating-point Literals
+		System.out.println(-1.334); //Floating-point Literals
+
+		System.out.println('A'); //Character Literals
+		System.out.println('$'); //Character Literals
+		System.out.println('7'); //Character Literals
+
+		System.out.println(true); //Boolean Literals (reserved word)
+		System.out.println(false); //Boolean Literals (reserved word)
+
+		System.out.println("ABC"); //String Literals
+		System.out.println("100"); //String Literals
+		System.out.println("A"); //String Literals
+		System.out.println("4"); //String Literals
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q18
+class Example{
+	public static void main(String[] args){
+		System.out.println('AB'); //Illegal
+		System.out.println(True); //Illegal
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+    4. Computer Variables
+////////////////////////////////////////////////////////////////////////////
+Q19
+class Example{
+	public static void main(String[] args){
+		int x; //Create a memory space(Location) ==> Variable declaration
+		x=100; //assign 100 to variable x
+		System.out.println(x); //prints value of x
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q20
+class Example{
+	public static void main(String[] args){
+		int x;
+		x=100;
+		System.out.println('x'); //Character Literal x
+		System.out.println("x"); //String x
+		System.out.println(x);   //Variable x
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q21
+class Example{
+	public static void main(String[] args){
+		int x;
+		//x=100;
+		System.out.println(x); //
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q22
+class Example{
+	public static void main(String[] args){
+		int x;
+		//x=100;
+		System.out.println(x); //Illegal
+		x=100;
+		System.out.println(x); //Legal
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q23
+class Example{
+	public static void main(String[] args){
+		int x;
+		System.out.println(x); //Illegal
+		x=100;
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q24
+class Example{
+	public static void main(String[] args){
+		int x;
+		x=100;
+		x=200;
+		System.out.println(x); // 200
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q25
+class Example{
+	public static void main(String[] args){
+		int x;
+		x=100;
+		System.out.println(x); //100
+		x=200;
+		System.out.println(x); //200
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q26
+class Example{
+	public static void main(String[] args){
+		x=100;
+		System.out.println(x);
+		x=200;
+		System.out.println(x);
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q27
+class Example{
+	public static void main(String[] args){
+		int x=100;
+		System.out.println(x); //100
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q28
+class Example{
+	public static void main(String[] args){
+		int x=100;
+		System.out.println(x); //100
+		int y;
+		y=200;
+		System.out.println(y); //200
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q29
+class Example{
+	public static void main(String[] args){
+		int x,y,z;
+		x=100;
+		y=200;
+		z=300;
+		System.out.println(x); //100
+		System.out.println(y); //200
+		System.out.println(z); //300
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q30
+class Example{
+	public static void main(String[] args){
+		int x=100,y,z=300;
+		y=200;
+		System.out.println(x); //100
+		System.out.println(y); //200
+		System.out.println(z); //300
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q31
+class Example{
+	public static void main(String[] args){
+		int x,y,z;
+		x=y=z=100;
+		System.out.println(x); //100
+		System.out.println(y); //100
+		System.out.println(z); //100
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q32
+class Example{
+	public static void main(String[] args){
+		int x=y=z=100; //Illegal
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q33
+class Example{
+	public static void main(String[] args){
+		int x,y,z;
+		x=100;
+		y=200;
+		z=300;
+		System.out.println(x); //100
+		System.out.println(y); //200
+		System.out.println(z); //300
+
+		int y=400;
+		System.out.println(y); //400
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q34
+class Example{
+	public static void main(String[] args){
+		int x,y,z;
+		x=100;
+		y=200;
+		z=300;
+		System.out.println(x); //100
+		System.out.println(y); //200
+		System.out.println(z); //300
+
+		int y=400; //Illegal
+		System.out.println(y); //400
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q35
+class Example{
+	public static void main(String[] args){
+		int r;
+		int R;
+		r=100;
+		R=200;
+		System.out.println(r); //100
+		System.out.println(R); //200
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q36
+class Example{
+	public static void main(String[] args){
+		int x,y;
+		x=100;
+		y=200;
+		System.out.println(x); //100
+		System.out.println(y); //200
+		x=y; //assign value of y to location of x 
+		System.out.println(x); //200
+		System.out.println(y); //200
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q37
+class Example{
+	public static void main(String[] args){
+		int x,y,z;
+		x=100;
+		y=200;
+		z=x+y;
+		System.out.println(x); //100
+		System.out.println(y); //200
+		System.out.println(z); //300
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+    5. String concatenation vs Arithmetic Addition    
+////////////////////////////////////////////////////////////////////////////
+Q38
+class Example{
+	public static void main(String[] args){
+		System.out.println(10+20); //prints 30 --> Arithmetic Addition
+		System.out.println("AB"+"CD"); //prints ABCD -->String concatenation
+
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q39
+class Example{
+	public static void main(String[] args){
+		System.out.println(10+20);
+		System.out.println("10"+"20"); //1020
+		System.out.println(10+"20"); //1020
+		System.out.println("10"+20); //1020
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q40 Exercise
+============
+class Example{
+	public static void main(String[] args){
+		int x=10,y=20;
+		System.out.println("x+y"); 		//Line 1
+		System.out.println("x"+"y");	//Line 2
+		System.out.println(x+"y");		//Line 3
+		System.out.println("x"+y);		//Line 4
+		System.out.println(x+y);		//Line 5
+		System.out.println(x+10);		//Line 6
+		System.out.println("x"+10);		//Line 7
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q41 Exercise
+============
+class Example{
+	public static void main(String[] args){
+		int x=10,y=20,z=30;
+		System.out.println("x+y+z"); 	//Line 1
+		System.out.println("x+y"+"z");	//Line 2
+		System.out.println("x"+"y+z");	//Line 3
+		System.out.println("x"+"y"+"z");//Line 4
+		System.out.println(x+"y"+"z");	//Line 5
+		System.out.println("x"+y+"z");	//Line 6
+		System.out.println("x"+"y"+z);	//Line 7
+		System.out.println(x+"y"+z);	//Line 8
+		System.out.println(x+y+"z");	//Line 9 ==>30z
+		System.out.println("x"+y+z);	//Line 10==>x2030
+		System.out.println(x+y+z);		//Line 11==>60
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q42 Exercise
+============
+class Example{
+	public static void main(String[] args){
+		int age=20;
+		System.out.println(); //Your age : 20
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q43 From Q42
+============
+class Example{
+	public static void main(String[] args){
+		int age=20;
+		System.out.println("Your age : "+age); //Your age : 20
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q44 Exercise
+============
+class Example{
+	public static void main(String[] args){
+		int x=100,y=200;
+		System.out.println(x+" "+y); //100 200
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q45 Exercise
+============
+class Example{
+	public static void main(String[] args){
+		int x,y,z;
+		x=100;
+		y=200;
+		z=x+y;
+		System.out.println(); // 100 + 200 = 300
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q46 From Q45
+============
+class Example{
+	public static void main(String[] args){
+		int x,y,z;
+		x=100;
+		y=200;
+		z=x+y;
+		System.out.println(x+" + "+y+" = "+z); // 100 + 200 = 300
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+    6. Keyboard Inputs    
+////////////////////////////////////////////////////////////////////////////
+Q47
+import java.util.*;
+class Example{
+	public static void main(String[] args){
+		Scanner input=new Scanner(System.in);
+		int x,y,z;
+		x=input.nextInt();
+		y=input.nextInt();
+		z=x+y;
+		System.out.println(x+" + "+y+" = "+z); // 100 + 200 = 300
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q48 From Q47
+============
+import java.util.*;
+class Example{
+	public static void main(String[] args){
+		Scanner input=new Scanner(System.in);
+		int x,y,z;
+		System.out.print("Input number 1 : ");
+		x=input.nextInt();
+		System.out.print("Input number 2 : ");
+		y=input.nextInt();
+		z=x+y;
+		System.out.println(x+" + "+y+" = "+z); // 100 + 200 = 300
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q49 Exercise
+============ 
+import java.util.*;
+class Example{
+	public static void main(String[] args){
+		Scanner input=new Scanner(System.in);
+		System.out.print("Input your age : ");
+		int age=input.nextInt();
+
+		System.out.println("Current age : "+age);
+		//
+		//find your age after 10 years
+		//
+		System.out.println("Your age after 10 years : "+age);
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q50 From 49
+===========
+import java.util.*;
+class Example{
+	public static void main(String[] args){
+		Scanner input=new Scanner(System.in);
+		System.out.print("Input your age : ");
+		int age=input.nextInt();
+
+		System.out.println("Current age : "+age);
+		//
+		//Insert code to find your age after 10 years
+		int x;
+		x=age+10;
+		age=x;
+		//age=age+10; //age+=10;
+
+		System.out.println("Your age after 10 years : "+age);
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q51 Exercise
+============
+import java.util.*;
+class Example{
+	public static void main(String[] args){
+		Scanner input=new Scanner(System.in);
+		System.out.print("Input number 1 : ");
+		int x=input.nextInt();
+
+		System.out.print("Input number 2 : ");
+		int y=input.nextInt();
+
+		System.out.println(x+" "+y); //eg: 12 13
+		//
+		//Insert code here
+		//
+		System.out.println(x+" "+y); //13 12
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+Q52
+
+////////////////////////////////////////////////////////////////////////////
+Q53
+
+////////////////////////////////////////////////////////////////////////////
+Q54
+
+////////////////////////////////////////////////////////////////////////////
+Q55
+
+////////////////////////////////////////////////////////////////////////////
+Q56
+
+////////////////////////////////////////////////////////////////////////////
+Q57
+
+////////////////////////////////////////////////////////////////////////////
+Q58
+
+////////////////////////////////////////////////////////////////////////////
+Q59
+
+////////////////////////////////////////////////////////////////////////////
+Q60
